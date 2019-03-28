@@ -31,8 +31,11 @@ public class LoginActivity extends AppCompatActivity {
                 if (userid.getText().toString().trim().equals("gduf")
                         && password.getText().toString().equals("welcome")) {
                     log_info.setText("登录成功！");
-                    Intent toMain = new Intent(LoginActivity.this,MainActivity.class);
-                    startActivity(toMain);
+                    Bundle bundle = new Bundle();
+                    bundle.putString("userid", userid.getText().toString());  //键值对
+                    Intent intent1 = new Intent(LoginActivity.this, MainActivity.class);
+                    intent1.putExtras(bundle);//加载参数
+                    startActivity(intent1);//启动另一activity
                 }
                 else{
                     log_info.setText("登录失败！");
