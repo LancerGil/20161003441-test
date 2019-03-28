@@ -14,7 +14,7 @@ public class LoginActivity extends AppCompatActivity {
 
     EditText userid, password;
     TextView log_info;
-    Button login_ok;
+    Button login_ok,signup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
