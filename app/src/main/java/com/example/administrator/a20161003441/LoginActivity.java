@@ -14,7 +14,7 @@ public class LoginActivity extends AppCompatActivity {
 
     EditText userid, password;
     TextView log_info;
-    Button login_ok,signup;
+    Button login_ok;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +36,7 @@ public class LoginActivity extends AppCompatActivity {
                     Intent intent1 = new Intent(LoginActivity.this, MainActivity.class);
                     intent1.putExtras(bundle);//加载参数
                     startActivity(intent1);//启动另一activity
+                    finish();
                 }
                 else{
                     log_info.setText("登录失败！");
