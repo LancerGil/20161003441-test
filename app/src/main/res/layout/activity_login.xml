@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".LoginActivity">
+    tools:context=".activity.LoginActivity">
 
     <RelativeLayout
         android:layout_margin="15dp"
@@ -89,7 +89,7 @@
 
             <CheckBox
                 android:layout_weight="1"
-                android:id="@+id/cb_remember_psw"
+                android:id="@+id/cb_remember_pwd"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"

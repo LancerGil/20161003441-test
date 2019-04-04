@@ -1,10 +1,15 @@
-package com.example.administrator.a20161003441;
+package com.example.administrator.a20161003441.activity;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
+
+import com.example.administrator.a20161003441.R;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -50,5 +55,16 @@ public class MainActivity extends AppCompatActivity {
                 new int[]{R.id.main_item_imageView1, R.id.main_item_title});
         // 绑定数据并且显示
         gridView.setAdapter(saImageItems);
+        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                switch (position) {
+                    case 0:
+                        Intent toStudentAty = new Intent(MainActivity.this, StudentActivity.class);
+                        startActivity(toStudentAty);
+                }
+            }
+        });
+
     }
 }
