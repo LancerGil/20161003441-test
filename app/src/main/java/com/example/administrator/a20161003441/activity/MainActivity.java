@@ -1,6 +1,7 @@
 package com.example.administrator.a20161003441.activity;
 
 import android.content.Intent;
+import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -62,6 +63,11 @@ public class MainActivity extends AppCompatActivity {
                     case 0:
                         Intent toStudentAty = new Intent(MainActivity.this, StudentActivity.class);
                         startActivity(toStudentAty);
+                        break;
+                    case 1:
+                        Intent toFragmentAty = new Intent(MainActivity.this, FragmentsActivity.class);
+                        startActivity(toFragmentAty);
+                        break;
                 }
             }
         });

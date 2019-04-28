@@ -21,14 +21,14 @@
         <TextView
             android:id="@+id/main_title"
             android:layout_gravity="left"
-            android:text="移动学习平台" />
+            android:text="@string/login_title" />
 
         <TextView
             android:id="@+id/main_userid"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
-            android:text="未登录" />
+            android:text="@string/not_login" />
     </GridLayout>
     <GridView
         android:id="@+id/main_gridView1"

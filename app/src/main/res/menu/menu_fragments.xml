@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.administrator.a20161003441.activity.FragmentsActivity">
+
+    <item
+        android:id="@+id/gender"
+        android:orderInCategory="100"
+        android:title="@string/gender"
+        app:showAsAction="never">
+        <menu>
+            <group android:id="@+id/group1" android:checkableBehavior="single">
+                <item android:id="@+id/male" android:title="@string/male"/>
+                <item android:id="@+id/female" android:title="@string/female"/>
+            </group>
+        </menu>
+    </item>
+    <item android:id="@+id/hobby" android:title="@string/hobby">
+        <menu>
+            <group android:id="@+id/group2" android:checkableBehavior="all">
+                <item android:id="@+id/sport" android:title="@string/sport"/>
+                <item android:id="@+id/sing" android:title="@string/singing"/>
+                <item android:id="@+id/trip" android:title="@string/traveling"/>
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/grid_menu"
+        android:title="grid_menu"/>
+
+
+</menu>

@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.StudentActivity"></activity>
+        <activity
+            android:name=".activity.FragmentsActivity"
+            android:label="@string/title_activity_fragments"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.StudentActivity" />
         <activity android:name=".activity.MainActivity" />
         <activity android:name=".activity.LoginActivity">
             <intent-filter>

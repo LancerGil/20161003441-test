@@ -8,4 +8,25 @@
     <string name="user">用户</string>
     <string name="no_acc_signup">没有账号，注册</string>
     <string name="account">账号</string>
+    <string name="title_activity_fragments">FragmentsActivity</string>
+    <string name="tab_text_1">主页</string>
+    <string name="tab_text_2">分类</string>
+    <string name="tab_text_3">个人</string>
+    <string name="action_settings">Settings</string>
+    <string name="not_login">未登录</string>
+    <string name="home_tab_1">home1111</string>
+    <string name="home_tab_2">home2222</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="section_format">欢迎来到</string>
+    <string name="catePage">分类页面</string>
+    <string name="userPage">个人中心</string>
+    <string name="male">男</string>
+    <string name="gender">性别</string>
+    <string name="female">女</string>
+    <string name="hobby">爱好</string>
+    <string name="sport">运动</string>
+    <string name="singing">唱歌</string>
+    <string name="traveling">旅游</string>
 </resources>
